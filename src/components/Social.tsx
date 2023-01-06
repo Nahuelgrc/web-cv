@@ -1,15 +1,15 @@
 import { Heading, Stack } from "@chakra-ui/react";
-import { ISocialItem, ISocialList } from "../interfaces";
-import { SocialItem } from "./SocialItem";
+import { ISocialItem } from "../interfaces";
+import { SocialItem } from "./";
 
-export const Social = ({ socialList }: ISocialList) => {
+export const Social = ({ socialList }: any) => {
   const socialListToRender: ISocialItem[] = socialList.filter(
     (item: ISocialItem) => item.show
   );
 
   return (
-    <Stack>
-      <Heading size="sm">Social</Heading>
+    <Stack mt={3} maxW="200px">
+      <Heading fontSize="md">Social</Heading>
       <Stack direction="row" justifyContent="space-between">
         {socialListToRender.map((socialItem) => (
           <SocialItem key={socialItem.name} {...socialItem} />

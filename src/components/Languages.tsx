@@ -1,14 +1,16 @@
-import { Stack, Heading } from "@chakra-ui/react";
-import { ILanguageList } from "../interfaces";
-import { LanguageItem } from "./LanguageItem";
+import { Stack, Heading, Box } from "@chakra-ui/react";
+import { ILanguageItem } from "../interfaces";
+import { LanguageItem } from "./";
 
-export const Languages = ({ languageList }: ILanguageList) => {
+export const Languages = ({ languageList }: any) => {
   return (
-    <Stack mt="100px">
-      <Heading size="sm">Languages</Heading>
-      {languageList.map((languageItem) => (
-        <LanguageItem key={languageItem.name} {...languageItem} />
-      ))}
+    <Stack pt={3}>
+      <Heading fontSize="md">Languages</Heading>
+      <Box>
+        {languageList.map((languageItem: ILanguageItem) => (
+          <LanguageItem key={languageItem.name} {...languageItem} />
+        ))}
+      </Box>
     </Stack>
   );
 };
