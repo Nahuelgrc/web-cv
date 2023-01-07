@@ -12,7 +12,7 @@ export const Header = ({ headerInformation, sizes }: IHeader) => {
   } = sizes;
 
   return (
-    <Stack direction="row" w="full">
+    <Stack direction={{ base: "column", md: "row" }} w="full">
       <Stack alignItems="center" w={leftWidthSize}>
         <Image
           borderRadius="full"

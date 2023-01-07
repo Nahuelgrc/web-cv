@@ -12,7 +12,7 @@ export const AppCV = () => {
 
   return (
     <Flex
-      direction={{ base: "row", md: "column" }}
+      direction="column"
       h="full"
       w="full"
       bgColor="#FFFFFF"

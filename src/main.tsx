@@ -8,7 +8,11 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <Stack bgColor="#F4F4F4">
-        <Container maxW="container.xl" py={6} px={48}>
+        <Container
+          maxW={{ sm: "container.sm", md: "container.xl" }}
+          py={6}
+          px={{ sm: 10, lg: 48 }}
+        >
           <AppCV />
         </Container>
       </Stack>

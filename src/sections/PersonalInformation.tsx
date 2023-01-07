@@ -22,7 +22,7 @@ export const PersonalInformation = ({
   } = sizes;
 
   return (
-    <Stack direction="row" w="full" mt={3}>
+    <Stack direction={{ base: "column", md: "row" }} w="full" mt={3}>
       <Stack w={leftWidthSize}>
         <Box>
           <Heading fontSize="md">Email</Heading>
