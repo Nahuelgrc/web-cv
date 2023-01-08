@@ -23,7 +23,11 @@ export const PersonalInformation = ({
 
   return (
     <Stack direction={{ base: "column", md: "row" }} w="full" mt={3}>
-      <Stack w={leftWidthSize}>
+      <Stack
+        w={{ base: "full", md: leftWidthSize }}
+        textAlign={{ base: "center", md: "start" }}
+        alignItems={{ base: "center", md: "inherit" }}
+      >
         <Box>
           <Heading fontSize="md">Email</Heading>
           <Text fontSize="md">{email}</Text>
@@ -35,7 +39,10 @@ export const PersonalInformation = ({
         <Social socialList={socialList} />
         <Languages languageList={languageList} />
       </Stack>
-      <Box w={rightWidthSize} pl={spaceBetweenSizes}>
+      <Box
+        w={{ base: "full", md: rightWidthSize }}
+        pl={{ base: 1, md: spaceBetweenSizes }}
+      >
         <JobExperience jobExperienceList={jobExperienceList} />
         <UniversityExperience
           universityExperienceList={universityExperienceList}
