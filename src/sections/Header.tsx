@@ -13,7 +13,7 @@ export const Header = ({ headerInformation, sizes }: IHeader) => {
 
   return (
     <Stack direction={{ base: "column", md: "row" }} w="full">
-      <Stack alignItems="center" w={leftWidthSize}>
+      <Stack alignItems="center" w={{ base: "full", md: leftWidthSize }}>
         <Image
           borderRadius="full"
           boxSize="125px"
@@ -21,7 +21,12 @@ export const Header = ({ headerInformation, sizes }: IHeader) => {
           alt={`${firstName} ${lastName}`}
         />
       </Stack>
-      <Stack justifyContent="center" w={rightWidthSize} pl={spaceBetweenSizes}>
+      <Stack
+        alignItems={{ base: "center", md: "flex-start" }}
+        justifyContent="center"
+        w={{ base: "full", md: rightWidthSize }}
+        pl={spaceBetweenSizes}
+      >
         <Heading>{`${firstName} ${lastName}`}</Heading>
         <Heading size="md" fontFamily="Roboto Light" color="custom.100">
           {roleTitle}

@@ -9,9 +9,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <ChakraProvider theme={theme}>
       <Stack bgColor="#F4F4F4">
         <Container
-          maxW={{ sm: "container.sm", md: "container.xl" }}
-          py={6}
-          px={{ sm: 10, lg: 48 }}
+          maxW={{ base: "container.sm", md: "container.xl" }}
+          py={{ base: 3, sm: 6 }}
+          px={{ base: 3, sm: 6, md: 12, lg: 48 }}
         >
           <AppCV />
         </Container>
