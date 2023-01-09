@@ -55,7 +55,7 @@
       "startYear": "2020",
       "endMonth": "10",
       "endYear": "2022",
-      "description": "I took part of a team as a full-stack developer on a health care company from UK. I developed new features and fixed issues/bugs. The Frontend was built on ReactJS using Typescript. The Backend was built using .NET Core (C#) and MySQL as database using AWS services. Also, used AWS services such as SQS, CloudSearch, CloudWatch, EC2 and Route53. Using Azure DevOps as CI/CD. - Added integration with Google Sign In. - Created a subscription system. - Created API calls to provide integration with Chargify, CQC, NumVerify and Fountain."
+      "description": "I took part of a team as a full-stack developer on a health care company from UK. I developed new features and fixed issues/bugs. The Frontend was built on ReactJS using Typescript. The Backend was built using .NET Core (C#) and MySQL as database using AWS services. Also, used AWS services such as SQS, CloudSearch, CloudWatch, EC2 and Route53. Using Azure DevOps as CI/CD. Added integration with Google Sign In. Created a subscription system. Created API calls to provide integration with Chargify, CQC, NumVerify and Fountain."
     },
     {
       "companyName": "SOUTHWORKS",
