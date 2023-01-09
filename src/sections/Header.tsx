@@ -10,16 +10,16 @@ export const Header = ({ headerInformation, sizes }: IHeader) => {
     rightWidthSize = "70%",
     spaceBetweenSizes = 6,
   } = sizes;
-
   return (
     <Stack direction={{ base: "column", md: "row" }} w="full">
       <Stack alignItems="center" w={{ base: "full", md: leftWidthSize }}>
         <Image
           borderRadius="full"
           boxSize="125px"
-          src={localPictureName}
+          src={`./${localPictureName}`}
           alt={`${firstName} ${lastName}`}
         />
+        Test
       </Stack>
       <Stack
         alignItems={{ base: "center", md: "flex-start" }}

@@ -16,10 +16,6 @@ export const JobExpecienceItem = ({
   return (
     <Box fontSize="md">
       <Stack spacing={1} direction="row">
-        {/* <Text as="b">{companyName}</Text>
-        <Text>
-          ({startDate} - {endDate})
-        </Text> */}
         <Text>
           <Text as="b">{companyName}</Text> ({startDate} - {endDate})
         </Text>
