@@ -15,14 +15,18 @@ export const JobExpecienceItem = ({
 
   return (
     <Box fontSize="md">
-      <Stack direction="row">
-        <Text as="b">{companyName}</Text>
+      <Stack spacing={1} direction="row">
+        {/* <Text as="b">{companyName}</Text>
         <Text>
           ({startDate} - {endDate})
+        </Text> */}
+        <Text>
+          <Text as="b">{companyName}</Text> ({startDate} - {endDate})
         </Text>
       </Stack>
-      <Text as="i">{roleTitle}</Text>
+      <Text as="u">{roleTitle}</Text>
       <Text>{description}</Text>
     </Box>
   );
 };
+// noOfLines={[1, 2, 3]}

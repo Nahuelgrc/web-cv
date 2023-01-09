@@ -5,7 +5,7 @@ import { UniversityExperienceItem } from "./UniversityExperienceItem";
 export const UniversityExperience = ({ universityExperienceList }: any) => {
   return (
     <Stack pb={3}>
-      <Stack bg="#F4F4F4" px={5} py={2} boxShadow="md">
+      <Stack bg="#F4F4F4" px={5} py={2} shadow="md">
         <Heading fontSize="md" color="custom.100">
           Education
         </Heading>

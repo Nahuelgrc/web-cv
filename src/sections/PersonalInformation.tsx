@@ -41,7 +41,8 @@ export const PersonalInformation = ({
       </Stack>
       <Box
         w={{ base: "full", md: rightWidthSize }}
-        pl={{ base: 1, md: spaceBetweenSizes }}
+        pl={{ base: 0, md: spaceBetweenSizes }}
+        pt={{ base: 3, sm: 0 }}
       >
         <JobExperience jobExperienceList={jobExperienceList} />
         <UniversityExperience

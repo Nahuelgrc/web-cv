@@ -16,8 +16,9 @@ export const AppCV = () => {
       h="full"
       w="full"
       bgColor="#FFFFFF"
-      px={6}
-      py={[3, 6]}
+      px={{ base: 2, md: 6 }}
+      pt={[3, 6]}
+      // py={[3, 6]}
     >
       <Header
         headerInformation={{

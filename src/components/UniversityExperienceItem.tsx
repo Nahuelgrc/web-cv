@@ -10,9 +10,10 @@ export const UniversityExperienceItem = ({
 
   return (
     <Box fontSize="md">
-      <Stack direction="row">
-        <Text as="b">{universityName}</Text>
-        <Text> - ({endDate})</Text>
+      <Stack spacing={0} direction={{ base: "column", md: "row" }}>
+        <Text>
+          <Text as="b">{universityName}</Text> ({endDate})
+        </Text>
       </Stack>
       <Text>{degree}</Text>
     </Box>
