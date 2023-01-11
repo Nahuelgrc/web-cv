@@ -4,7 +4,7 @@ import { ISocialItem } from "../interfaces";
 export const SocialItem = ({ name, url, logoName }: ISocialItem) => {
   return (
     <Link href={url} isExternal>
-      <Image boxSize="35px" src={`./${logoName}`} alt={name} />
+      <Image boxSize="35px" src={`./icons/${logoName}`} alt={name} />
     </Link>
   );
 };

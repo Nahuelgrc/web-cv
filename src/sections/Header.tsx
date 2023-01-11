@@ -16,7 +16,7 @@ export const Header = ({ headerInformation, sizes }: IHeader) => {
         <Image
           borderRadius="full"
           boxSize="125px"
-          src={`./${localPictureName}`}
+          src={`./images/${localPictureName}`}
           alt={`${firstName} ${lastName}`}
         />
         Test
