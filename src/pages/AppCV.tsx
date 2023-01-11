@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import { Header, PersonalInformation } from "../sections";
 import { Information } from "../../data";
-import { ILanguageItem, ISizes } from "../interfaces";
+import { ISizes } from "../interfaces";
 
 export const AppCV = () => {
   const Sizes: ISizes = {
@@ -18,7 +18,6 @@ export const AppCV = () => {
       bgColor="#FFFFFF"
       px={{ base: 2, md: 6 }}
       pt={[3, 6]}
-      // py={[3, 6]}
     >
       <Header
         headerInformation={{
@@ -35,7 +34,7 @@ export const AppCV = () => {
           location: Information.location,
           socialList: Information.socialList,
         }}
-        languageList={Information.languagesList as ILanguageItem[]}
+        languageList={Information.languagesList}
         sizes={Sizes}
         jobExperienceList={Information.jobExperienceList}
         universityExperienceList={Information.universityExperienceList}

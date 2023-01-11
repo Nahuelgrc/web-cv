@@ -9,7 +9,7 @@ export const UniversityExperienceItem = ({
   const endDate = endYear ? endYear : "Current";
 
   return (
-    <Box fontSize="md">
+    <Box fontSize="md" pb={2}>
       <Stack spacing={0} direction={{ base: "column", md: "row" }}>
         <Text>
           <Text as="b">{universityName}</Text> ({endDate})

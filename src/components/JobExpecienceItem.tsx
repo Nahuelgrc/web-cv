@@ -14,7 +14,7 @@ export const JobExpecienceItem = ({
   const endDate = endMonth && endYear ? endMonth + "/" + endYear : "Current";
 
   return (
-    <Box fontSize="md">
+    <Box fontSize="md" pb={2}>
       <Stack spacing={1} direction="row">
         <Text>
           <Text as="b">{companyName}</Text> ({startDate} - {endDate})

@@ -4,7 +4,7 @@ import { LanguageItem } from "./";
 
 export const Languages = ({ languageList }: any) => {
   return (
-    <Box pt={3}>
+    <Box>
       <Heading fontSize="md">Languages</Heading>
       <Box>
         {languageList.map((languageItem: ILanguageItem) => (

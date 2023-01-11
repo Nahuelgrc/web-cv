@@ -7,8 +7,12 @@ export const Social = ({ socialList }: any) => {
     (item: ISocialItem) => item.show
   );
 
+  if (socialListToRender.length === 0) {
+    return <></>;
+  }
+
   return (
-    <Stack mt={3} maxW="200px" w="full">
+    <Stack mt={3} maxW="200px" w="full" pb={1}>
       <Heading fontSize="md">Socials</Heading>
       <Stack direction="row" justifyContent="space-between">
         {socialListToRender.map((socialItem) => (
