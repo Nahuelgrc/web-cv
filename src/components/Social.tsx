@@ -9,7 +9,7 @@ export const Social = ({ socialList }: any) => {
 
   return (
     <Stack mt={3} maxW="200px" w="full">
-      <Heading fontSize="md">Social</Heading>
+      <Heading fontSize="md">Socials</Heading>
       <Stack direction="row" justifyContent="space-between">
         {socialListToRender.map((socialItem) => (
           <SocialItem key={socialItem.name} {...socialItem} />
