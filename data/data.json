@@ -64,7 +64,7 @@
       "startYear": "2018",
       "endMonth": "11",
       "endYear": "2020",
-      "description": "I worked with Kanban methodology using different tools and technologies in multiple projects from USA. Here I learnt React, NodeJS, Typescript, icroservices, non-relational databases and used Azure and AWS services. Helped to develop a multi-cloud solution on serverless repository with NodeJS. lso, created an AWS SQS function with Javascript to run an open-source antivirus on files uploaded on a S3 bucket."
+      "description": "I worked with Kanban methodology using different tools and technologies in multiple projects from USA. Here I learnt React, NodeJS, Typescript, icroservices, non-relational databases and used Azure and AWS services. Helped to develop a multi-cloud solution on serverless repository with NodeJS. Also, created an AWS SQS function with Javascript to run an open-source antivirus on files uploaded on a S3 bucket."
     },
     {
       "companyName": "Hexacta",
@@ -79,10 +79,10 @@
       "companyName": "Accenture",
       "roleTitle": "Jr. Software Developer",
       "startMonth": "03",
-      "startYear": "2010" ,
+      "startYear": "2010",
       "endMonth": "03",
       "endYear": "2016",
-      "description": "This was my first job as a Software Developer. I worked for multiple projects and clients. I used a lot of different technologies such as Cobol, .NET ebForms, Angular, CSS, HTML, Git, and MVC pattern. Also learnt to work with Agile methodologies."
+      "description": "This was my first job as a Software Developer. I worked for multiple projects and clients. I used a lot of different technologies such as Cobol, .NET WebForms, Angular, CSS, HTML, Git, and MVC pattern. Also learnt to work with Agile methodologies."
     }
   ],
 
