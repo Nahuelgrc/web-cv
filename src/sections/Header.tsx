@@ -19,13 +19,12 @@ export const Header = ({ headerInformation, sizes }: IHeader) => {
           src={`./images/${localPictureName}`}
           alt={`${firstName} ${lastName}`}
         />
-        Test
       </Stack>
       <Stack
         alignItems={{ base: "center", md: "flex-start" }}
         justifyContent="center"
         w={{ base: "full", md: rightWidthSize }}
-        pl={spaceBetweenSizes}
+        pl={{ base: 0, md: spaceBetweenSizes }}
       >
         <Heading>{`${firstName} ${lastName}`}</Heading>
         <Heading size="md" fontFamily="Roboto Light" color="custom.100">
