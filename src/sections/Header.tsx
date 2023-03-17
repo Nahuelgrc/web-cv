@@ -27,7 +27,7 @@ export const Header = ({ headerInformation, sizes }: IHeader) => {
         pl={{ base: 0, md: spaceBetweenSizes }}
       >
         <Heading>{`${firstName} ${lastName}`}</Heading>
-        <Heading size="md" fontFamily="Roboto Light" color="custom.100">
+        <Heading size="md" fontWeight={400} color="custom.100">
           {roleTitle}
         </Heading>
       </Stack>
