@@ -53,7 +53,17 @@ export interface IJobExperience {
   startYear: string;
   endMonth?: string;
   endYear?: string;
-  description: string;
+  description?: string;
+  bullets?: string[];
+  projects?: IJobProject[];
+}
+
+export interface IJobProject {
+  projectName: string;
+  client?: string;
+  description?: string;
+  stack?: string;
+  keyActivities?: string[];
 }
 
 // END - JOB EXPERIENCE
