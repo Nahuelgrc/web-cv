@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, Stack, Text, Button } from "@chakra-ui/react";
 import {
   JobExperience,
   Languages,
@@ -38,6 +38,17 @@ export const PersonalInformation = ({
         </Box>
         <Social socialList={socialList} />
         <Languages languageList={languageList} />
+        <Box pt={6}>
+          <a href="/NahuelGarciaCV.pdf" download="Nahuel_Garcia_CV.pdf">
+            <Button
+              colorScheme="teal"
+              size="sm"
+              variant="outline"
+            >
+              Download CV
+            </Button>
+          </a>
+        </Box>
       </Stack>
       <Box
         w={{ base: "full", md: rightWidthSize }}
