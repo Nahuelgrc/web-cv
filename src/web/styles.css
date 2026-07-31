@@ -1,0 +1,242 @@
+/* ---------------------------------------------------------------------------
+   styles.css
+   Styles for the CV web page. The "sheet" uses A4 proportions. The download is
+   generated separately by react-pdf; the @media print rules below are just a
+   bonus so Ctrl+P also produces a clean page.
+--------------------------------------------------------------------------- */
+:root {
+  --black: #111827;
+  --blue: #2563eb;
+  --gray: #6b7280;
+  --dark: #374151;
+  --line: #e5e7eb;
+  --chip-bg: #f9fafb;
+  --chip-border: #d1d5db;
+  --dot-empty: #d1d5db;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #20201f;
+  color: var(--black);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.app { min-height: 100vh; }
+
+/* Top toolbar (not printed) */
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 8px 12px;
+  flex-wrap: wrap;
+}
+.toolbar h1 { margin: 0; font-size: 18px; font-weight: 700; color: var(--black); }
+.toolbar p { margin: 2px 0 0; font-size: 13px; color: var(--gray); }
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  background: var(--blue);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn:hover { background: #1d4ed8; }
+.btn:disabled { opacity: 0.6; cursor: default; }
+
+/* Sheet container */
+.sheet-wrap { display: flex; justify-content: center; padding: 0 8px 40px; }
+
+.sheet {
+  width: 210mm;
+  min-height: 297mm;
+  background: #fff;
+  padding: 12mm 14mm;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  color: var(--dark);
+  font-size: 9.5pt;
+  line-height: 1.45;
+  /* Scale up the sheet and its content proportionally (web only; does not
+     affect the PDF, which is generated separately in A4). */
+  zoom: 1.35;
+}
+
+/* Header */
+.header { display: flex; }
+.header-left { width: 60%; padding-right: 18px; }
+.header-right {
+  width: 40%;
+  padding-left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  font-size: 25pt;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+  line-height: 1.05;
+}
+.job-title {
+  font-size: 13pt;
+  color: var(--blue);
+  font-weight: 700;
+  margin: 4px 0 0;
+}
+.contact-row { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; }
+.contact-item { display: flex; align-items: center; gap: 4px; }
+.contact-item span { font-size: 9pt; color: var(--dark); }
+.photo {
+  width: 26mm;
+  height: 26mm;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Columns: main (Experience) + sidebar (Education, Skills, Languages, links) */
+.columns { display: flex; margin-top: 16px; }
+.col-left { width: 60%; padding-right: 18px; }
+.col-right { width: 40%; padding-left: 6px; }
+.section { margin-bottom: 16px; }
+.section-title {
+  font-size: 11pt;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding-top: 4px;
+  border-top: 1.5px solid var(--black);
+  margin: 0 0 8px;
+}
+
+/* Experience */
+.exp-item { margin-bottom: 12px; break-inside: avoid; }
+.exp-role { font-size: 10.5pt; font-weight: 700; color: var(--black); margin: 0; }
+.exp-company { font-size: 10pt; font-weight: 700; color: var(--blue); margin: 2px 0 0; }
+.exp-date { display: flex; align-items: center; gap: 4px; margin: 3px 0 4px; }
+.exp-date span { font-size: 8.5pt; color: var(--gray); }
+.exp-desc { font-size: 9pt; color: var(--dark); margin: 0 0 5px; }
+.bullet { display: flex; margin-bottom: 3.5px; break-inside: avoid; }
+.bullet-dot { width: 9px; flex: 0 0 9px; font-size: 9pt; color: var(--dark); }
+.bullet-body { flex: 1; font-size: 9pt; color: var(--dark); }
+.bullet-highlight { font-weight: 700; color: var(--black); }
+
+/* Education */
+.edu-item { margin-bottom: 9px; break-inside: avoid; }
+.edu-degree { font-size: 9.5pt; font-weight: 700; color: var(--black); margin: 0; }
+.edu-institution { font-size: 9pt; color: var(--blue); margin: 2px 0 0; }
+
+/* Skills */
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip {
+  border: 1px solid var(--chip-border);
+  background: var(--chip-bg);
+  border-radius: 4px;
+  padding: 2.5px 6px;
+  font-size: 8.5pt;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+/* Languages */
+.lang-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.lang-name { font-size: 9.5pt; font-weight: 700; color: var(--black); margin: 0; }
+.lang-level { font-size: 8.5pt; color: var(--gray); margin: 1px 0 0; }
+.dots { display: flex; gap: 3px; }
+.dot { width: 6px; height: 6px; border-radius: 50%; }
+
+/* Social */
+.social-item {
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+}
+.social-item.last { padding-bottom: 0; margin-bottom: 0; border-bottom: none; }
+.social-head { display: flex; align-items: center; gap: 5px; }
+.social-name { font-size: 9.5pt; font-weight: 700; color: var(--black); }
+.social-url {
+  display: block;
+  font-size: 8pt;
+  color: var(--gray);
+  margin: 2px 0 0 19px;
+  text-decoration: none;
+}
+.social-url:hover { text-decoration: underline; }
+
+/* ---------------------------------------------------------------------------
+   Responsive. Wide screens keep the enlarged A4 sheet. Once it no longer fits,
+   drop the zoom and let the sheet be fluid (capped at A4 width). On phones the
+   layout reflows to a single column with a stacked header.
+   (The PDF is unaffected — it's generated separately in A4 by react-pdf.)
+--------------------------------------------------------------------------- */
+@media (max-width: 1120px) {
+  .sheet-wrap { padding: 0 12px 40px; }
+  .sheet {
+    zoom: 1;
+    width: 100%;
+    max-width: 210mm;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .sheet-wrap { padding: 0 0 24px; }
+  .sheet { padding: 24px 20px; }
+
+  /* Header stacks: photo on top (centered), then name / title / contact. */
+  .header { flex-direction: column-reverse; }
+  .header-left { width: 100%; padding-right: 0; }
+  .header-right {
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  .name { font-size: 21pt; }
+
+  /* Flatten the two columns and reorder the sections for mobile reading:
+     Skills, Languages, Experience, Education, Find me online. */
+  .columns { flex-direction: column; margin-top: 14px; }
+  .col-left,
+  .col-right { display: contents; }
+  .s-skills { order: 1; }
+  .s-lang { order: 2; }
+  .s-exp { order: 3; }
+  .s-edu { order: 4; }
+  .s-find { order: 5; }
+
+  /* Avoid long links overflowing on narrow screens. */
+  .social-url { overflow-wrap: anywhere; }
+}
+
+/* Print: optional Ctrl+P produces a clean page (the Download button uses react-pdf) */
+@media print {
+  @page { size: A4; margin: 0; }
+  body { background: #fff; }
+  .no-print { display: none !important; }
+  .sheet-wrap { padding: 0; }
+  .sheet {
+    width: auto;
+    min-height: auto;
+    box-shadow: none;
+    margin: 0;
+  }
+  /* Force colors (blue, chips) to print as-is */
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
