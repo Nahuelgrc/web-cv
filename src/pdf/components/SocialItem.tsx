@@ -1,4 +1,4 @@
-import { View, Text } from "@react-pdf/renderer";
+import { View, Text, Link } from "@react-pdf/renderer";
 import { SocialIcon } from "../icons";
 import { styles } from "../styles";
 import type { Social } from "../../types";
@@ -11,7 +11,9 @@ export default function SocialItem({ item, last }: { item: Social; last: boolean
         <SocialIcon platform={item.platform} size={11} />
         <Text style={styles.socialName}>{item.platform}</Text>
       </View>
-      <Text style={styles.socialUrl}>{item.label}</Text>
+      <Link src={item.url} style={styles.socialUrl}>
+        {item.label}
+      </Link>
     </View>
   );
 }
