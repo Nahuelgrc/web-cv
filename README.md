@@ -50,11 +50,11 @@ Started my career delivering enterprise web apps across industries with
 
 ## Skills
 
-- **Languages:** C#, TypeScript, JavaScript, SQL, HTML, CSS, Cobol
+- **Languages:** C#, TypeScript, JavaScript, SQL, HTML, CSS
 - **Backend:** .NET Core, ASP.NET, .NET Framework, Node.js
 - **Frontend:** React, Angular
 - **Data:** SQL Server, MySQL, NoSQL
-- **Cloud & DevOps:** AWS, Azure, Docker, Azure DevOps, CI/CD
+- **Cloud & DevOps:** AWS, Azure, Docker, Azure DevOps, CI/CD, IaC, Terraform
 - **Testing:** NUnit, XUnit, Jest, TDD
 - **Tools:** Git, GitHub Copilot
 

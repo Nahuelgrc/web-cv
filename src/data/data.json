@@ -39,7 +39,7 @@
         {
           "projectName": "Spearheading the technical evolution of a large-scale U.S.-based business travel management platform. Moving a critical architectural transition from Angular 1.5 to React 18 while maintaining high-availability backend services.",
           "projectLabel": "",
-          "stack": "C#, .NET Core Web API, .NET Framework, React, TypeScript, JavaScript, Microsoft SQL Server, Azure, Docker, NUnit, XUnit, GitHub Copilot.",
+          "stack": "C#, .NET Core 8, .NET Framework, TypeScript, JavaScript, React, Microsoft SQL Server, Azure, Docker, NUnit, XUnit, GitHub Copilot, IaC, Terraform.",
           "keyActivities": [
             "<strong>Frontend Modernization & Autonomy:</strong> Successfully migrated a legacy frontend architecture from Angular 1.5 to React 18, significantly boosting application performance while demonstrating full autonomy to own and deliver complex React JS features.",
             "<strong>API Migration & Technical Evolution:</strong> Spearheaded the successful migration of Sabre endpoints from an older version to a newer one for train search and reservation modules, ensuring zero downtime and modernizing core backend connectivity.",
@@ -61,10 +61,10 @@
         {
           "projectName": "Delivered high-impact full-stack solutions for a UK-based healthcare provider, focusing on cloud scalability, secure authentication, and complex financial integrations.",
           "projectLabel": "",
-          "stack": "C#, .NET Core, React, TypeScript, NUnit, XUnit, MySQL, AWS (SQS, CloudSearch, CloudWatch, EC2, Route53), Azure DevOps.",
+          "stack": "C#, .NET Core, React, TypeScript, NUnit, XUnit, MySQL, AWS (SQS, CloudSearch, CloudWatch, EC2, Route53), Azure DevOps, Terraform.",
           "keyActivitiesLabel": "Key Achievements",
           "keyActivities": [
-            "<strong>Cloud-Native Architecture & Scalability:</strong> Built and optimized a high-performance backend using .NET Core and MySQL across the AWS ecosystem (SQS, CloudSearch, CloudWatch). Outcome: Significantly enhanced system resilience and data retrieval speeds, ensuring high availability for critical healthcare operations.",
+            "<strong>Cloud-Native Architecture & Scalability:</strong> Built and optimized a high-performance backend using .NET Core and MySQL across the AWS ecosystem (SQS, CloudSearch, CloudWatch), provisioning infrastructure as code with Terraform. Outcome: Significantly enhanced system resilience and data retrieval speeds, ensuring high availability for critical healthcare operations.",
             "<strong>Financial Integration & Subscription ROI:</strong> Designed and implemented a comprehensive billing and subscription system integrated with Chargify. Outcome: Automated complex financial workflows, reducing manual overhead and eliminating revenue leakage.",
             "<strong>Security & UX Modernization:</strong> Spearheaded the integration of secure authentication protocols via Google Sign-In and streamlined third-party API connectivity (CQC, NumVerify, Fountain). Outcome: Strengthened data privacy compliance in a regulated healthcare environment while improving user onboarding.",
             "<strong>Frontend Precision & Autonomy:</strong> Developed highly responsive, type-safe interfaces using ReactJS and TypeScript. Outcome: Delivered a seamless, error-free UX tailored for healthcare professionals, operating with full autonomy from concept to deployment.",
@@ -84,13 +84,13 @@
         {
           "projectName": "Functioned as a key contributor for high-profile international clients, specializing in multi-cloud serverless architectures and high-performance streaming applications.",
           "projectLabel": "",
-          "stack": "Node.js, TypeScript, JavaScript, Jest, TDD, AWS (S3, SQS), Azure, NoSQL.",
+          "stack": "Node.js, TypeScript, JavaScript, Jest, TDD, AWS (S3, SQS), AWS SDK, Azure, NoSQL.",
           "keyActivitiesLabel": "Key Achievements",
           "keyActivities": [
             "<strong>Multi-Cloud Abstraction (The Challenge & Solution):</strong> Faced with the challenge of avoiding vendor lock-in for a high-profile client, investigated and implemented a dual-compatible Serverless framework (AWS/Azure). Engineered a custom Node.js middleware pattern to consume storage services (S3 and Blob Storage) completely agnostically.",
             "<strong>TDD & Architecture Outcome:</strong> Spearheaded this multi-cloud development using strict Test-Driven Development (TDD) with Jest. Outcome: Achieved over 90% code coverage, ensuring seamless cloud switching with zero breaking changes and drastically reducing cross-platform bugs.",
             "<strong>High-Performance Streaming Solutions:</strong> Developed a custom web platform tailored for Smart TVs and streaming devices using ReactJS and a Node.js Express API. Outcome: Successfully handled high-concurrency CRUD operations against MSSQL, delivering a low-latency, resilient streaming experience for global end-users.",
-            "<strong>DevOps Optimization & Delivery Speed:</strong> Overhauled and optimized CI/CD pipelines within Azure DevOps. Outcome: Slashed deployment times significantly and maximized delivery reliability for international retail and media enterprises.",
+            "<strong>DevOps Optimization & Delivery Speed:</strong> Overhauled and optimized CI/CD pipelines within Azure DevOps and provisioned AWS resources as code via the AWS SDK. Outcome: Slashed deployment times significantly and maximized delivery reliability for international retail and media enterprises.",
             "<strong>Enterprise Data Management:</strong> Scaled and maintained high-throughput promotion-tracking systems for a global convenience store chain utilizing Node.js and MongoDB, ensuring data consistency during peak traffic hours.",
             "<strong>Learnings & Technical Growth:</strong> Deepened expertise in cloud-agnostic architecture, mastering the trade-offs of abstracting cloud-native services. Refined the ability to design high-performance, memory-efficient applications constrained by Smart TV hardware limitations."
           ]
@@ -128,7 +128,7 @@
         {
           "projectName": "Multi-project environments across various corporate industries.",
           "projectType": "portfolio",
-          "stack": ".NET WebForms, Angular, C#, Cobol, CSS, HTML, MVC Pattern, Git.",
+          "stack": ".NET WebForms, Angular, C#, CSS, HTML, MVC Pattern, Git.",
           "keyActivities": [
             "Started professional career delivering software solutions across diverse technical environments and enterprise clients.",
             "Contributed to the development and maintenance of legacy web apps using .NET WebForms, C#, and newer frontend features using Angular.",
