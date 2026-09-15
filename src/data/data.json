@@ -39,11 +39,11 @@
         {
           "projectName": "Spearheading the technical evolution of a large-scale U.S.-based business travel management platform. Moving a critical architectural transition from Angular 1.5 to React 18 while maintaining high-availability backend services.",
           "projectLabel": "",
-          "stack": "C#, .NET Core 8, .NET Framework, TypeScript, JavaScript, React, Microsoft SQL Server, Azure, Docker, NUnit, XUnit, GitHub Copilot, IaC, Terraform.",
+          "stack": "C#, .NET Core 8, .NET Framework, TypeScript, JavaScript, React, Microsoft SQL Server, Azure, Docker, Microservices, NUnit, XUnit, GitHub Copilot, IaC, Terraform.",
           "keyActivities": [
             "<strong>Frontend Modernization & Autonomy:</strong> Successfully migrated a legacy frontend architecture from Angular 1.5 to React 18, significantly boosting application performance while demonstrating full autonomy to own and deliver complex React JS features.",
             "<strong>API Migration & Technical Evolution:</strong> Spearheaded the successful migration of Sabre endpoints from an older version to a newer one for train search and reservation modules, ensuring zero downtime and modernizing core backend connectivity.",
-            "<strong>Backend Architecture & Stakeholder Alignment:</strong> Architected and developed scalable backend features using ASP.NET Core, collaborating directly with US stakeholders to translate high-level business goals into product requirements and efficient task distributions.",
+            "<strong>Backend Architecture & Stakeholder Alignment:</strong> Architected and developed scalable backend features using ASP.NET Core within a microservices architecture, collaborating directly with US stakeholders to translate high-level business goals into product requirements and efficient task distributions.",
             "<strong>Technical & Quality Assurance:</strong> Conducted rigorous code reviews, championed robust refactoring practices, and facilitated cross-team technical alignment throughout the end-to-end pull request (PR) process.",
             "<strong>Testing, Documentation & AI Productivity:</strong> Ensured high-quality, bug-free deliveries through comprehensive unit and integration testing, authored detailed technical documentation, and optimized engineering workflows by effectively leveraging GitHub Copilot."
           ]
@@ -82,9 +82,9 @@
       "endYear": "2020",
       "projects": [
         {
-          "projectName": "Functioned as a key contributor for high-profile international clients, specializing in multi-cloud serverless architectures and high-performance streaming applications.",
+          "projectName": "Functioned as a key contributor for high-profile international clients, specializing in multi-cloud serverless architectures, microservices, and high-performance streaming applications.",
           "projectLabel": "",
-          "stack": "Node.js, TypeScript, JavaScript, Jest, TDD, AWS (S3, SQS), AWS SDK, Azure, NoSQL.",
+          "stack": "Node.js, TypeScript, JavaScript, Jest, TDD, AWS (S3, SQS), AWS SDK, Azure, Microservices, NoSQL.",
           "keyActivitiesLabel": "Key Achievements",
           "keyActivities": [
             "<strong>Multi-Cloud Abstraction (The Challenge & Solution):</strong> Faced with the challenge of avoiding vendor lock-in for a high-profile client, investigated and implemented a dual-compatible Serverless framework (AWS/Azure). Engineered a custom Node.js middleware pattern to consume storage services (S3 and Blob Storage) completely agnostically.",
